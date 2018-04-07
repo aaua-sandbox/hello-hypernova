@@ -7,6 +7,7 @@
   "author": "aaua <15936438+aaua@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
+    "s": "node hypernova.js",
     "test": "echo \"Error: no test specified\""
   },
   "dependencies": {
