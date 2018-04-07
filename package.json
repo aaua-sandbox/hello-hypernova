@@ -1,5 +1,22 @@
 {
   "name": "hello-hypernova",
   "private": true,
-  "dependencies": {}
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/aaua-sandbox/hello-hypernova.git",
+  "author": "aaua <15936438+aaua@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "dependencies": {
+    "hypernova": "^2.2.5",
+    "hypernova-react": "^2.1.0",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
+  },
+  "devDependencies": {
+    "browserify": "^16.1.1",
+    "browserify-incremental": "^3.1.1"
+  }
 }
