@@ -6,11 +6,12 @@ const DECREMENT_COUNTER = {
 }
 
 export function counterReducer(state = { count: 0 }, action) {
+  console.log(action.type)
   switch(action.type) {
-    case INCREMENT_COUNTER:
+    case INCREMENT_COUNTER.type:
       console.log('counterReducer: INCREMENT_COUNTER')
       return { count: state.count + 1 }
-    case DECREMENT_COUNTER:
+    case DECREMENT_COUNTER.type:
       console.log('counterReducer: DECREMENT_COUNTER')
       return { count: state.count - 1 }
     default:
