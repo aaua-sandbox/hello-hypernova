@@ -1,12 +1,16 @@
-var React = require('react');
-var renderReact = require('hypernova-react').renderReact;
+import { connect } from 'react-redux'
+import { Counter } from './components/Counter'
+import { mapStateToProps, mapDispatchToProps } from './reducer/counter'
+import { configureStore } from './store/configureStore'
+import { renderReactRedux } from 'hypernova-react-redux'
 
-function MyComponent(props) {
-  return React.createElement('div', {
-    onClick: function () {
-      alert('Click');
-    },
-  }, 'Hello, ' + props.name + '!');
-}
+let ConnectedMyComponent = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Counter);
 
-module.exports = renderReact('MyComponent.js', MyComponent);
+module.exports = renderReactRedux(
+  'MyComponent.js',
+  ConnectedMyComponent,
+  configureStore
+)

@@ -7,16 +7,24 @@
   "author": "aaua <15936438+aaua@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "s": "node hypernova.js",
+    "s": "babel-node hypernova.js --presets es2015,react",
     "test": "echo \"Error: no test specified\""
   },
   "dependencies": {
     "hypernova": "^2.2.5",
     "hypernova-react": "^2.1.0",
+    "hypernova-react-redux": "^1.2.0",
+    "prop-types": "^15.6.1",
     "react": "^16.3.1",
-    "react-dom": "^16.3.1"
+    "react-dom": "^16.3.1",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^8.0.0",
     "browserify": "^16.1.1",
     "browserify-incremental": "^3.1.1"
   }
